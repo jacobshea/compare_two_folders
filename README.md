@@ -45,11 +45,11 @@ Most diff tools flag *differences*; I wanted a **quantitative similarity score**
 
 ```bash
 # 1. clone this repo
-git clone https://github.com/<your-org>/copy-similarity-estimator.git
-cd copy-similarity-estimator
+git clone https://github.com/jacobshea/compare_two_folders.git
+cd compare_two_folders
 
 # 2. make it executable
-chmod +x copy_similarity_estimator.sh
+chmod +x copyscore.sh
 ```
 
 ---
@@ -63,7 +63,7 @@ chmod +x copy_similarity_estimator.sh
 Example:
 
 ```bash
-./copy_similarity_estimator.sh ~/dev/mcp-client-chatbot-main ~/dev/open-imi-main
+./copyscore.sh ~/dev/folder1 ~/dev/folder2
 ```
 
 ---
@@ -72,8 +72,8 @@ Example:
 
 ```
 Comparing folders:
-  Original: /Users/jacob/dev/mcp-client-chatbot-main
-  Suspect:  /Users/jacob/dev/open-imi-main
+  Original: /Users/jacob/dev/folder1
+  Suspect:  /Users/jacob/dev/folder2
 
 File-by-file comparison:
 ------------------------
@@ -84,8 +84,8 @@ src/components/ui/button.tsx     → 100.0% similar
 
 ------------------------
 Files matched:               162
-Total lines scanned:      24 317
-Matching lines:           22 986
+Total lines scanned:      24,317
+Matching lines:           22,986
 Estimated similarity
   (line-weighted):         94.53%
 Average file similarity:   91.22%
